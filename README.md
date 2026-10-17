@@ -6,40 +6,6 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 
 ## Things I build on my own
 
-### ✍️ Novella
-
-**A native Mac novel editor where AI suggests edits and the writer decides.**
-
-<img src="assets/novella/hero.gif" alt="Odette rewrites a passage; the change stays a diff until accepted" width="100%">
-
-<table>
-  <tr>
-    <td width="33%"><img src="assets/novella/feature-page-layouts.gif" alt="Page layouts" width="100%"></td>
-    <td width="33%"><img src="assets/novella/feature-themes.gif" alt="Themes" width="100%"></td>
-    <td width="33%"><img src="assets/novella/feature-canon.gif" alt="Canon" width="100%"></td>
-  </tr>
-  <tr>
-    <td><sub>One chapter as a continuous page, pages, spread or ribbon.</sub></td>
-    <td><sub>Three themes, light and dark, with small ASCII animations.</sub></td>
-    <td><sub>Characters, world entries and story notes beside the chapters.</sub></td>
-  </tr>
-</table>
-
-- AI rewrites land on the page as an **inline diff**: nothing changes until the writer accepts it.
-- **Claude and Codex run inside the app, locked down.** Claude starts with no built-in tools and reaches the story only through Novella's own MCP server; Codex runs in a read-only sandbox.
-- Keys live in the Keychain, and the provider rules were written down before the first line of code.
-- SwiftUI and TextKit across ten Swift modules, with **1,966 tests**.
-
-▶️ [**Watch the 45-second demo**](https://fede-aletti.github.io/Fede-Aletti/assets/novella/demo.mp4) · <sub>Swift · SwiftUI · TextKit · MCP · SQLite FTS5 · macOS 26</sub>
-
-<details>
-<summary>More screenshots</summary>
-<br>
-<img src="assets/novella/shot-inline-diff.png" alt="Proposed edit as a diff" width="49%"> <img src="assets/novella/shot-odette-chat.png" alt="Asking Odette about the story" width="49%">
-<img src="assets/novella/shot-ribbon-pages.png" alt="Ribbon layout" width="49%"> <img src="assets/novella/shot-character-sheet.png" alt="Character sheet" width="49%">
-<img src="assets/novella/shot-dark-theme.png" alt="Grape Soda theme, dark" width="49%">
-</details>
-
 ### 🃏 Spider Solitaire
 
 **A cozy pixel-art solitaire for iPhone and Mac, built in Swift.**
@@ -102,6 +68,46 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 <br>
 <img src="assets/worms/shot-bazooka-blast.png" alt="Bazooka blast" width="49%"> <img src="assets/worms/shot-cluster-bomb.png" alt="Cluster bomb" width="49%">
 <img src="assets/worms/shot-airstrike.png" alt="Airstrike" width="49%"> <img src="assets/worms/shot-victory.png" alt="Victory" width="49%">
+</details>
+
+### ✍️ Novella
+
+**A native Mac novel editor where AI suggests edits and the writer decides.**
+
+<img src="assets/novella/hero.gif" alt="Odette answers in her panel, rewrites a passage, and the change waits as a diff until accepted" width="100%">
+
+<table>
+  <tr>
+    <td width="50%"><img src="assets/novella/feature-odette-chat.gif" alt="Asking Odette about the story" width="100%"></td>
+    <td width="50%"><img src="assets/novella/feature-page-layouts.gif" alt="Page layouts" width="100%"></td>
+  </tr>
+  <tr>
+    <td><sub>Ask Odette about the story, with chapters and characters attached.</sub></td>
+    <td><sub>One chapter as a continuous page, pages, spread or ribbon.</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="assets/novella/feature-themes.gif" alt="Themes" width="100%"></td>
+    <td width="50%"><img src="assets/novella/feature-canon.gif" alt="Canon" width="100%"></td>
+  </tr>
+  <tr>
+    <td><sub>Three themes, light and dark, with small ASCII animations.</sub></td>
+    <td><sub>Characters, world entries and story notes beside the chapters.</sub></td>
+  </tr>
+</table>
+
+- AI rewrites land on the page as an **inline diff**: nothing changes until the writer accepts it.
+- **Claude and Codex run inside the app, locked down.** Claude starts with no built-in tools and reaches the story only through Novella's own MCP server; Codex runs in a read-only sandbox.
+- Keys live in the Keychain, and the provider rules were written down before the first line of code.
+- SwiftUI and TextKit across ten Swift modules, with **1,966 tests**.
+
+▶️ [**Watch the 36-second demo**](https://fede-aletti.github.io/Fede-Aletti/assets/novella/demo.mp4) · <sub>Swift · SwiftUI · TextKit · MCP · SQLite FTS5 · macOS 26</sub>
+
+<details>
+<summary>More screenshots</summary>
+<br>
+<img src="assets/novella/shot-inline-diff.png" alt="Proposed edit as a diff" width="49%"> <img src="assets/novella/shot-odette-chat.png" alt="Asking Odette about the story" width="49%">
+<img src="assets/novella/shot-ribbon-pages.png" alt="Ribbon layout" width="49%"> <img src="assets/novella/shot-character-sheet.png" alt="Character sheet" width="49%">
+<img src="assets/novella/shot-dark-theme.png" alt="Grape Soda theme, dark" width="49%">
 </details>
 
 ### More
