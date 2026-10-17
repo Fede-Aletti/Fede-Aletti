@@ -6,39 +6,103 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 
 ## Things I build on my own
 
-### Novella
+### ✍️ Novella
 
-<img src="assets/novella.jpg" alt="Novella: an AI edit shown as an inline diff, waiting to be accepted" width="100%">
+**A native Mac novel editor where AI suggests edits and the writer decides.**
 
-A Mac app for writing novels. Its assistant, Odette, can only propose edits: nothing touches a chapter until the writer accepts it.
+<img src="assets/novella/hero.gif" alt="Odette rewrites a passage; the change stays a diff until accepted" width="100%">
 
-**The hard part:** running Claude and Codex inside the app, locked down. They read the story only through an MCP server the app owns, with keys in the Keychain and the provider rules written down before the first line of code.
+<table>
+  <tr>
+    <td width="33%"><img src="assets/novella/feature-page-layouts.gif" alt="Page layouts" width="100%"></td>
+    <td width="33%"><img src="assets/novella/feature-themes.gif" alt="Themes" width="100%"></td>
+    <td width="33%"><img src="assets/novella/feature-canon.gif" alt="Canon" width="100%"></td>
+  </tr>
+  <tr>
+    <td><sub>One chapter as a continuous page, pages, spread or ribbon.</sub></td>
+    <td><sub>Three themes, light and dark, with small ASCII animations.</sub></td>
+    <td><sub>Characters, world entries and story notes beside the chapters.</sub></td>
+  </tr>
+</table>
 
-<sub>Swift · SwiftUI · MCP · SQLite FTS5 · macOS 26</sub>
+- AI rewrites land on the page as an **inline diff**: nothing changes until the writer accepts it.
+- **Claude and Codex run inside the app, locked down.** Claude starts with no built-in tools and reaches the story only through Novella's own MCP server; Codex runs in a read-only sandbox.
+- Keys live in the Keychain, and the provider rules were written down before the first line of code.
+- SwiftUI and TextKit across ten Swift modules, with **1,966 tests**.
 
-### Spider Solitaire
+▶️ [**Watch the 45-second demo**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/novella/demo.mp4) · <sub>Swift · SwiftUI · TextKit · MCP · SQLite FTS5 · macOS 26</sub>
 
-<p>
-  <img src="assets/spider-game.png" alt="Klondike in the greenhouse chapter, with the dog companion" width="32%">
-  <img src="assets/spider-companion.png" alt="Spider with the tabby cat companion" width="32%">
-  <img src="assets/spider-story.png" alt="Story screen with chapter progress and quests" width="32%">
-</p>
+<details>
+<summary>More screenshots</summary>
+<br>
+<img src="assets/novella/shot-inline-diff.png" alt="Proposed edit as a diff" width="49%"> <img src="assets/novella/shot-odette-chat.png" alt="Asking Odette about the story" width="49%">
+<img src="assets/novella/shot-ribbon-pages.png" alt="Ribbon layout" width="49%"> <img src="assets/novella/shot-character-sheet.png" alt="Character sheet" width="49%">
+<img src="assets/novella/shot-dark-theme.png" alt="Grape Soda theme, dark" width="49%">
+</details>
 
-A cozy pixel solitaire for iPhone and Mac, Klondike and Spider, with a pet that talks to you and a story that unfolds across three chapters.
+### 🃏 Spider Solitaire
 
-**The hard part:** keeping pixel art crisp on every screen. Whole-number scaling, bitmap fonts drawn in code, a five-tone palette, and around 1,100 tests holding it together.
+**A cozy pixel-art solitaire for iPhone and Mac, built entirely in Swift.**
 
-<sub>Swift · SwiftUI · SpriteKit · iOS · macOS</sub>
+<table>
+  <tr>
+    <td width="25%"><img src="assets/spider/hero.gif" alt="Win cascade" width="100%"></td>
+    <td width="25%"><img src="assets/spider/feature-companion-hints.gif" alt="Companion and hints" width="100%"></td>
+    <td width="25%"><img src="assets/spider/feature-themes.gif" alt="Themes" width="100%"></td>
+    <td width="25%"><img src="assets/spider/feature-story-chapters.gif" alt="Story chapters" width="100%"></td>
+  </tr>
+  <tr>
+    <td><sub>The win cascade, with the cat cheering.</sub></td>
+    <td><sub>Hint-driven moves, with the dog chiming in.</sub></td>
+    <td><sub>Paper, green and moonlit themes.</sub></td>
+    <td><sub>Three story chapters: cottage, greenhouse, observatory.</sub></td>
+  </tr>
+</table>
 
-### Worms
+- **Pixel art that stays crisp on every screen:** an integer-scaled grid, bitmap fonts drawn in code and a five-tone palette.
+- **Pets that react to how you play**, and a three-chapter story with quests that unlock accessories.
+- Klondike and Spider in **one SwiftUI codebase for iOS and macOS**, with around 1,100 tests.
 
-<img src="assets/worms.png" alt="Worms: a bazooka shell carving a crater in the hillside" width="100%">
+▶️ [**Watch the 35-second demo**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/spider/demo.mp4) · <sub>Swift · SwiftUI · SpriteKit · iOS · macOS</sub>
 
-The game I played as a kid, rebuilt from scratch in Godot without looking at the original. Seven weapons, wind, water and up to four teams on one keyboard.
+<details>
+<summary>More screenshots</summary>
+<br>
+<img src="assets/spider/shot-home.png" alt="Home" width="19%"> <img src="assets/spider/shot-greenhouse.png" alt="Greenhouse" width="19%"> <img src="assets/spider/shot-story.png" alt="Story" width="19%"> <img src="assets/spider/shot-journal.png" alt="Journal" width="19%"> <img src="assets/spider/shot-wardrobe.png" alt="Wardrobe" width="19%">
+</details>
 
-**The hard part:** ground that breaks pixel by pixel, and a simulation deterministic enough that tests replay a whole match and land on the same result.
+### 💥 Worms
 
-<sub>Godot · GDScript</sub>
+**My childhood favourite, rebuilt from scratch in Godot without looking at the original.**
+
+<img src="assets/worms/hero.gif" alt="A bazooka shot blows the peak apart and the worm drowns" width="100%">
+
+<table>
+  <tr>
+    <td width="33%"><img src="assets/worms/feature-airstrike.gif" alt="Airstrike" width="100%"></td>
+    <td width="33%"><img src="assets/worms/feature-cluster-bomb.gif" alt="Cluster bomb" width="100%"></td>
+    <td width="33%"><img src="assets/worms/feature-setup.gif" alt="Team setup" width="100%"></td>
+  </tr>
+  <tr>
+    <td><sub>An airstrike knocks a worm into the sea.</sub></td>
+    <td><sub>A cluster bomb shreds the rock arch.</sub></td>
+    <td><sub>Teams, skins and accessories with live previews.</sub></td>
+  </tr>
+</table>
+
+- **Ground that breaks pixel by pixel:** every blast carves the map.
+- **A deterministic simulation:** seeded matches replay to the same state hash in tests.
+- Seven weapons, wind, water and up to four teams on one keyboard, with **about 1,000 headless tests**.
+- All the art is drawn in code from one fixed palette.
+
+▶️ [**Watch a full match in 37 seconds**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/worms/demo.mp4) · <sub>Godot · GDScript</sub>
+
+<details>
+<summary>More screenshots</summary>
+<br>
+<img src="assets/worms/shot-bazooka-blast.png" alt="Bazooka blast" width="49%"> <img src="assets/worms/shot-cluster-bomb.png" alt="Cluster bomb" width="49%">
+<img src="assets/worms/shot-airstrike.png" alt="Airstrike" width="49%"> <img src="assets/worms/shot-victory.png" alt="Victory" width="49%">
+</details>
 
 ### More
 
