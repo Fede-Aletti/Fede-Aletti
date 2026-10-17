@@ -1,85 +1,63 @@
-# 👋 Hi, I'm Federico Aletti
+# Hi, I'm Fede
 
-**Frontend & Mobile Developer | Córdoba, Argentina**  
-[LinkedIn](https://linkedin.com/fedealetti) • [Email](mailto:fedaletti@gmail.com)
+Software engineer in Córdoba, Argentina. I build web and mobile products, and these days a lot of that happens with AI agents in the loop.
 
-<p align="center">
-  <!-- Lenguajes -->
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-  <!-- Frontend -->
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
-  <img src="https://img.shields.io/badge/Astro-1a1a1a?style=for-the-badge&logo=astro&logoColor=FF5D01" alt="Astro" />
-  <!-- Mobile -->
-  <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
-  <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
-  <!-- Backend -->
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-  <img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" alt="NestJS" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <!-- Tools -->
-  <img src="https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white" alt="Storybook" />
-  <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" alt="TanStack Query" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a major Argentine bank and leading the mobile design system its other apps share.
+
+## Things I build on my own
+
+### Novella
+
+<img src="assets/novella.jpg" alt="Novella: an AI edit shown as an inline diff, waiting to be accepted" width="100%">
+
+A Mac app for writing novels. Its assistant, Odette, can only propose edits: nothing touches a chapter until the writer accepts it.
+
+**The hard part:** running Claude and Codex inside the app, locked down. They read the story only through an MCP server the app owns, with keys in the Keychain and the provider rules written down before the first line of code.
+
+<sub>Swift · SwiftUI · MCP · SQLite FTS5 · macOS 26</sub>
+
+### Spider Solitaire
+
+<p>
+  <img src="assets/spider-game.png" alt="Klondike in the greenhouse chapter, with the dog companion" width="32%">
+  <img src="assets/spider-companion.png" alt="Spider with the tabby cat companion" width="32%">
+  <img src="assets/spider-story.png" alt="Story screen with chapter progress and quests" width="32%">
 </p>
 
----
+A cozy pixel solitaire for iPhone and Mac, Klondike and Spider, with a pet that talks to you and a story that unfolds across three chapters.
 
-## 🚀 About Me
+**The hard part:** keeping pixel art crisp on every screen. Whole-number scaling, bitmap fonts drawn in code, a five-tone palette, and around 1,100 tests holding it together.
 
-I'm a passionate developer with over 4 years of experience crafting high-quality web and mobile applications. My focus is on performance, technical excellence, and delivering seamless user experiences. I thrive on learning new technologies, collaborating with diverse teams, and building products that make a difference.
+<sub>Swift · SwiftUI · SpriteKit · iOS · macOS</sub>
 
----
+### Worms
 
-## 💡 What I Do
+<img src="assets/worms.png" alt="Worms: a bazooka shell carving a crater in the hillside" width="100%">
 
-- **Frontend Development:**  
-  Building interactive, scalable interfaces with React, Next.js, Angular, and Expo.
+The game I played as a kid, rebuilt from scratch in Godot without looking at the original. Seven weapons, wind, water and up to four teams on one keyboard.
 
-- **Mobile Development:**  
-  Creating robust cross-platform apps using React Native and Expo.
+**The hard part:** ground that breaks pixel by pixel, and a simulation deterministic enough that tests replay a whole match and land on the same result.
 
-- **Backend Skills:**  
-  Experience with Node.js, Prisma, Express, SQL, and MongoDB for building and scaling APIs and services.
+<sub>Godot · GDScript</sub>
 
-- **UI/UX:**  
-  Strong eye for design systems and user-centric workflows using modern UI Libraries.
+### More
 
-- **Fullstack Mindset:**  
-  Comfortable working across the stack, from database modeling to frontend delivery.
+- [**LaterVault**](https://latervault.vercel.app) — Save now, decide later: links you might buy or read, on Pinterest-inspired cards with a pixel cat for company. <sub>Next.js · Drizzle · Neon</sub>
+- **Lunara** — An offline sleep companion for iPhone, with soundscapes generated on the device. <sub>SwiftUI</sub>
+- **Nupcia** — A wedding vendor marketplace for Argentina. <sub>Next.js · Supabase</sub>
+- [**ESAM**](https://esam-instituto.vercel.app) — An editorial site for a fashion school in Córdoba. <sub>Astro</sub>
+- [**Hook Hub**](https://hook-hub.vercel.app) — A catalogue of Claude Code hooks. <sub>Next.js</sub>
 
----
+## Things I've built at work
 
-## 🛠️ Tech Stack
-
-- **Languages:** JavaScript, TypeScript, SQL, Go, Python
-- **Frontend:** React.js, Next.js, Angular, Astro, Expo, React Native
-- **Mobile:** React Native, Expo
-- **Backend:** Node.js, Express, Nest.js, Prisma, PostgreSQL, Firebase, MongoDB
-- **Tools:** Storybook, TanStack Query, Git, Agile/Scrum
-
+- **A virtual wallet** for a major Argentine bank, using the full Expo suite (sensors, haptics, sound), plus the mobile design system behind its retail, corporate and event-ticket apps. <sub>Expo · Tamagui · Nx · Turborepo · SQLite</sub>
+- **Customer and vendor apps** for a home-maintenance SaaS company, from scratch. <sub>React · Next.js · Expo · TanStack Query</sub>
+- **A lending platform's MVP**, which I led on the front end from zero. <sub>Next.js · Prisma · PostgreSQL</sub>
+- **A patient app** for a health association, where people track their condition, its severity and their documents. <sub>Expo · lead front end</sub>
+- **Anthelios League**, a dermatology quiz league for hospitals and clinics, with teams, weekly rankings and prizes. <sub>Angular · Node.js · Prisma</sub>
+- **An outsourcing marketplace** where freelancers join a talent pool and companies post projects matched by skill. <sub>React · Material UI</sub>
+- **A B2B self-service panel** for a telecom's corporate customers. <sub>.NET · C# · SQL</sub>
 
 ---
 
-## 🌱 Always Learning
-
-I'm committed to continuous growth—exploring new frameworks, contributing to open source, and staying updated with the latest in tech.
-
----
-
-## 🤝 Let's Connect
-
-If you want to talk code, collaborate on a project, or just say hi, reach out!
-
-- [LinkedIn](https://linkedin.com/fedealetti)
-- [Email](mailto:fedaletti@gmail.com)
-
----
-
-*Building digital experiences that are fast, reliable, and delightful to use.*
+[LinkedIn](https://www.linkedin.com/in/fedealetti) · [fedaletti@gmail.com](mailto:fedaletti@gmail.com)
