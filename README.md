@@ -30,7 +30,7 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 - Keys live in the Keychain, and the provider rules were written down before the first line of code.
 - SwiftUI and TextKit across ten Swift modules, with **1,966 tests**.
 
-▶️ [**Watch the 45-second demo**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/novella/demo.mp4) · <sub>Swift · SwiftUI · TextKit · MCP · SQLite FTS5 · macOS 26</sub>
+▶️ [**Watch the 45-second demo**](https://fede-aletti.github.io/Fede-Aletti/assets/novella/demo.mp4) · <sub>Swift · SwiftUI · TextKit · MCP · SQLite FTS5 · macOS 26</sub>
 
 <details>
 <summary>More screenshots</summary>
@@ -63,7 +63,7 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 - **Pets that react to how you play**, and a three-chapter story with quests that unlock accessories.
 - Klondike and Spider in **one SwiftUI codebase for iOS and macOS**, with around 1,100 tests.
 
-▶️ [**Watch the 35-second demo**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/spider/demo.mp4) · <sub>Swift · SwiftUI · SpriteKit · iOS · macOS</sub>
+▶️ [**Watch the 35-second demo**](https://fede-aletti.github.io/Fede-Aletti/assets/spider/demo.mp4) · <sub>Swift · SwiftUI · SpriteKit · iOS · macOS</sub>
 
 <details>
 <summary>More screenshots</summary>
@@ -95,7 +95,7 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 - Seven weapons, wind, water and up to four teams on one keyboard, with **about 1,000 headless tests**.
 - All the art is drawn in code from one fixed palette.
 
-▶️ [**Watch a full match in 37 seconds**](https://github.com/Fede-Aletti/Fede-Aletti/blob/main/assets/worms/demo.mp4) · <sub>Godot · GDScript</sub>
+▶️ [**Watch a full match in 37 seconds**](https://fede-aletti.github.io/Fede-Aletti/assets/worms/demo.mp4) · <sub>Godot · GDScript</sub>
 
 <details>
 <summary>More screenshots</summary>
