@@ -42,7 +42,7 @@ Right now I'm a Mobile Engineer at **Darwoft**, building a virtual wallet for a 
 
 ### 🃏 Spider Solitaire
 
-**A cozy pixel-art solitaire for iPhone and Mac, built entirely in Swift.**
+**A cozy pixel-art solitaire for iPhone and Mac, built in Swift.**
 
 <table>
   <tr>
